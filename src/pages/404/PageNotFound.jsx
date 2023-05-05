@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.scss'
 import PageContainer from '../../components/pageContainer/PageContianer'
-const NotFound = () => {
+const PageNotFound = () => {
   return (
     <div className="pageNotFound">
     <PageContainer>
@@ -11,4 +11,4 @@ const NotFound = () => {
 </div>
 )}
 
-export default NotFound
+export default PageNotFound

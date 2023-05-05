@@ -49,6 +49,12 @@
                 box-shadow: none;
                 background-color: $grey-base;
                 border-radius: 20px;
+                .react-select__dropdown-indicator{
+                   svg{
+                    width: 18px;
+                    height: 18px;
+                   }
+                }
                 .react-select__value-container {
                     .react-select__placeholder,
                     .react-select__input-container {

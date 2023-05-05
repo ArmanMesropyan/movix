@@ -7,10 +7,10 @@ import Footer from "./components/footer/footer";
 import Details from "./pages/details/Details";
 import SearchResult from "./pages/searchResult/SearchResult";
 import Explore from "./pages/explore/Explore";
-import NotFound from "./pages/404/NotFound";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchDataFromApi } from "./utils/api";
 import { getApiConfiguration , getGenres } from "./store/reducers/home_slice";
+import PageNotFound from "./pages/404/PageNotFound";
 
 function App() {
   const dispatch = useDispatch();
@@ -52,7 +52,7 @@ function App() {
         <Route path="/:mediaType/:id" element={<Details />} />
         <Route path="/search/:query" element={<SearchResult />} />
         <Route path="/explore/:mediaType" element={<Explore />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
     </>
