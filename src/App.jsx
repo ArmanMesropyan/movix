@@ -9,7 +9,7 @@ import SearchResult from "./pages/searchResult/SearchResult";
 import Explore from "./pages/explore/Explore";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchDataFromApi } from "./utils/api";
-import { getApiConfiguration , getGenres } from "./store/reducers/home_slice";
+import { getApiConfiguration, getGenres } from "./store/reducers/home_slice";
 import PageNotFound from "./pages/404/PageNotFound";
 
 function App() {
@@ -42,7 +42,6 @@ function App() {
       return genres.map((item) => (allGenres[item.id] = item));
     });
     dispatch(getGenres(allGenres));
- 
   };
   return (
     <>
